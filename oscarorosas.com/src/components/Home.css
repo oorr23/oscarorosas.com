@@ -1,0 +1,12 @@
+.main-layout {
+    display: flex;
+}
+
+.filter-section {
+    width: 20vw;
+}
+
+.search-cards-section {
+    width: 80vw;
+    margin-left: 2vw;
+}

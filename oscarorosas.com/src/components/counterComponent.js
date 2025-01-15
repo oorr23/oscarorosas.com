@@ -4,13 +4,12 @@ import {
   increment,
   decrement,
   incrementByAmount,
-} from "../../features/counterSlice";
+} from "../features/counterSlice";
 
 import { NavLink } from "react-router-dom";
 
 const CounterComponent = () => {
   const count = useSelector((state) => state.counter.value);
-  const cart = useSelector((state) => state.cart.value);
   const dispatch = useDispatch();
   
 
