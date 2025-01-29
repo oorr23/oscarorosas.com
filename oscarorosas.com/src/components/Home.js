@@ -2,7 +2,7 @@ import "./Home.css"
 import NavBar from "./NavBar"
 import FilterComponent from "./filterComponent"
 import SearchBar from "./SearchBar"
-import Card from "./Card"
+import Cards from "./Cards"
 // import { useSelector, useDispatch } from "react-redux";
 
 const Home=()=>{
@@ -14,10 +14,10 @@ const Home=()=>{
         <div className="main-layout">
           <div className="filter-section">
             <FilterComponent />
-          </div> 
+          </div>
           <div className ="search-cards-section">
             <SearchBar />
-            <Card />
+            <Cards />
           </div>
         </div>
     </div>

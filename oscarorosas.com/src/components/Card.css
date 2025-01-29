@@ -1,0 +1,32 @@
+/* Align Items: is used for parent container */
+/* Align-self: is used for containers within parent. */
+.card-container {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    align-self: center;
+    border-radius: 30px;
+}
+
+.card-image > img {
+    border-radius: 30px;
+}
+
+.card-description {
+    padding: 10px;
+}
+
+.card-button {
+    align-self: center;
+}
