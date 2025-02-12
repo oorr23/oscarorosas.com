@@ -1,12 +1,6 @@
 import "./Card.css"
 
-const Card = () => {
-    const carddata = {
-        imgUrl: "https://picsum.photos/200/300",
-        skill: "Javascript",
-        characteristics: "Funny",
-        proficiency: "Beginner",
-    }
+const Card = ({carddata}) => {
     return(<div className="card-container">
         <div className="card-image">
             <img src = {carddata.imgUrl}/>
@@ -16,7 +10,7 @@ const Card = () => {
             <p>Characteristics: {carddata.characteristics}</p>
             <p>Proficiency: {carddata.proficiency}</p>
         </div>
-        <div className="card-button"><button>Click Me!</button></div>
+        <div className="card-button-container"><button className="card-button-button">Click Me!</button></div>
     </div>)
 }
 

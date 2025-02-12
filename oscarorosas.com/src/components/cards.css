@@ -1,4 +1,7 @@
 .cards-container {
-    margin-left: 1.98vw;
-    margin-right: 1.98vw;
+    margin-left: 1.90vw;
+    margin-right: 1.90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
