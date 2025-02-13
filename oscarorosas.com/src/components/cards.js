@@ -23,19 +23,19 @@ const Cards = () => {
     {
         imgUrl: "https://picsum.photos/200/300",
         skill: "Javascript",
-        characteristics: "Funny",   
+        characteristics: "TEST",   
         proficiency: "Beginner",
     },
     {
         imgUrl: "https://picsum.photos/200/300",
         skill: "Javascript",
-        characteristics: "Funny",   
+        characteristics: "TEST #2",   
         proficiency: "Beginner",
     },
     {
         imgUrl: "https://picsum.photos/200/300",
         skill: "Javascript",
-        characteristics: "Funny",   
+        characteristics: "TEST #3",   
         proficiency: "Beginner",
     }
 ]
