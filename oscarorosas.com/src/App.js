@@ -8,12 +8,12 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import CounterSlice from "./components/counterComponent";
-
 function App() {
+  const hasSeenPopup = localStorage.getItem("hasSeenPopup");
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home hasSeenPopup = {hasSeenPopup}/>} />
         <Route path="/counter" element={<CounterSlice />} />
       </Routes>
     </BrowserRouter>

@@ -6,26 +6,25 @@ import Cards from "./Cards"
 import { useEffect, useState } from "react";
 // import { useSelector, useDispatch } from "react-redux";
 
-const Home=()=>{
-  const [isPopupOpen, setIsPopupOpen] = useState(true);
+const Home=({hasSeenPopup})=>{
 
-  const openPopup = () => setIsPopupOpen(true);
-  const closePopup = () => setIsPopupOpen(false);
+  const [closePressed,setIsClosePressed] = useState(false)
+
+  //const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () =>setIsClosePressed(true);
 
   useEffect(() => {
     // Check if the pop-up has already been shown in this session
-    const hasSeenPopup = sessionStorage.getItem("hasSeenPopup");
     if (!hasSeenPopup) {
-      setIsPopupOpen(true);
-      sessionStorage.setItem("hasSeenPopup", "true"); // Save to prevent re-showing until session ends
+      localStorage.setItem("hasSeenPopup", "true"); // Save to prevent re-showing until session ends
     }
-  }, []);
+  },);
 
 return (
     <div>
       <NavBar />
 
-      {isPopupOpen && (
+      {(!hasSeenPopup && !closePressed)  && (
         <div className="popup-overlay">
           <div className="popup-container">
             <p className="popup-title"><h1>WELCOME!</h1><br></br></p>
