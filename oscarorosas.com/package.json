@@ -15,6 +15,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.9",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
     "font-awesome": "^4.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -47,5 +49,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "0) Open Terminal via: Ctrl + `\r 1) cd oscarorosas.com\r 2) npm install\r 3) npm start",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

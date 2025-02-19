@@ -1,0 +1,44 @@
+footer {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px 0;
+    max-width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-right form input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-right form button {
+    padding: 10px;
+    border: none;
+    background: #ff6f61;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
