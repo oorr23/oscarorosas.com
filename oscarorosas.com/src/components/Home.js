@@ -4,6 +4,7 @@ import FilterComponent from "./filterComponent"
 import SearchBar from "./SearchBar"
 import Cards from "./Cards"
 import { useEffect, useState } from "react";
+import Footer from "./Footer"
 // import { useSelector, useDispatch } from "react-redux";
 
 const Home=({hasSeenPopup})=>{
@@ -45,6 +46,8 @@ return (
             <Cards />
           </div>
         </div>
+
+        <Footer />
     </div>
 )}
 
