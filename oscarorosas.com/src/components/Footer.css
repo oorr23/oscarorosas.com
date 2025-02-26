@@ -33,12 +33,22 @@ footer {
     cursor: pointer;
 }
 
-.social-icons img {
-    width: 30px;
-    margin: 10px;
-    transition: 0.3s;
+.quick-links {
+    list-style: none;
+    margin-left: .1vw;
+    text-decoration: none;
 }
 
-.social-icons img:hover {
-    transform: scale(1.2);
+.quick-links-a {
+    text-decoration: none;
+    color: white;
+}
+
+.email-form {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.social-icons {
+    margin-top: .8vw;
 }
