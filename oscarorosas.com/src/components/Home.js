@@ -23,8 +23,8 @@ const Home=({hasSeenPopup})=>{
 
 return (
     <div>
-      <NavBar />
-
+      <NavBar isCartPage={false}/>
+      
       {(!hasSeenPopup && !closePressed)  && (
         <div className="popup-overlay">
           <div className="popup-container">
